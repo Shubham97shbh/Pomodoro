@@ -35,7 +35,6 @@ def count_down(count_sec, count_min):
             if count_sec == 0:
                 count_sec = 59
                 count_min -= 1
-                window.after(100, count_down, count_sec, count_min)
             # display
             if count_sec < 10 and count_min < 10:
                 canvas.itemconfig(text_pic, text=f"0{count_min}:0{count_sec}")
